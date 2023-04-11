@@ -1,0 +1,12 @@
+.bestseller-card {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 50px 0;
+}
+
+.bestseller-card-body {
+    display: flex;
+    margin: 100px;
+    height: 500px;
+}

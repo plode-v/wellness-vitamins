@@ -1,113 +1,55 @@
-import styled from "styled-components"
+import "./footerStyles.css"
 import { Facebook, Instagram, Twitter, } from "@mui/icons-material"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-const Container = styled.div`
-    display: flex;
-`
-const Left = styled.div`
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-`
-const Center = styled.div`
-    flex: 1;
-    padding: 20px;
-`
-const Title = styled.h3`
-    margin-bottom: 30px;
-`
-
-const List = styled.ul`
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-`
-const ListItem = styled.li`
-    width: 50%;
-    margin-bottom: 10px;
-`
-
-const Right = styled.div`
-    flex: 1;
-    padding: 20px;
-`
-
-const Logo = styled.h1`
-
-`
-const Desc = styled.p`
-    margin: 20px 0;
-`
-const SocialContainer = styled.div`
-    display: flex;
-
-`
-const SocialIcon = styled.div`
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: white;
-    background-color: ${props => props.color};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-` 
-
-const ContactItem = styled.div`
-    
-`
+import { faLocationDot, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
     return (
-        <Container>
-            <Left>
-                <Logo>LOGO.</Logo>
-                <Desc>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomised words which don't even slightly belivable.</Desc>
-                <SocialContainer>
-                    <SocialIcon color="#3B5999">
+        <div className="footer-main-container">
+            <div className="footer-left">
+                <h1 className="footer-logo">LOGO.</h1>
+                <p className="footer-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomised words which don't even slightly belivable.</p>
+                <div className="footer-social-container">
+                    <div id="fb" color="#3B5999">
                         <Facebook />
-                    </SocialIcon>
-                    <SocialIcon color="#E4405F">
+                    </div>
+                    <div id="ig" color="#E4405F">
                         <Instagram />
-                    </SocialIcon>
-                    <SocialIcon color="#55ACEE">
+                    </div>
+                    <div id="tw" color="#55ACEE">
                         <Twitter />
-                    </SocialIcon>
-                </SocialContainer>
-            </Left>
-            <Center>
-                <Title>Useful Links</Title>
-                <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Vitamins</ListItem>
-                    <ListItem>Muscle Building</ListItem>
-                    <ListItem>Men's Apparels</ListItem>
-                    <ListItem>Women's Apparels</ListItem>
-                    <ListItem>My Account</ListItem>
-                    <ListItem>Order Tracking</ListItem>
-                    <ListItem>Wishlist</ListItem>
-                    <ListItem>Terms</ListItem>
-                </List>
-            </Center>
-            <Right>
-                <Title>Contact</Title>
-                <ContactItem>
-                    address
-                </ContactItem>
-                <ContactItem>
-                    +1 234 5678
-                </ContactItem>
-                <ContactItem>
-                    contact@wellness.com
-                </ContactItem>
-            </Right>
-        </Container>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-center">
+                <h3 className="footer-title">Useful Links</h3>
+                <ul className="footer-unlist">
+                    <li>Home</li>
+                    <li>Cart</li>
+                    <li>Vitamins</li>
+                    <li>Muscle Building</li>
+                    <li>Men's Apparels</li>
+                    <li>Women's Apparels</li>
+                    <li>My Account</li>
+                    <li>Order Tracking</li>
+                    <li>Wishlist</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div className="footer-right">
+                <h3 className="footer-title">Contact</h3>
+                <div className="footer-contactItem">
+                    <FontAwesomeIcon icon={faLocationDot} className="footer-contactItem-icon" />123 Lorem Blvd. Ipsum CA, 92665
+                </div>
+                <div className="footer-contactItem">
+                    <FontAwesomeIcon icon={faPhone} className="footer-contactItem-icon" />+1 234 5678
+                </div>
+                <div className="footer-contactItem">
+                    <FontAwesomeIcon icon={faEnvelope} className="footer-contactItem-icon" />contact@wellness.com
+                </div>
+                <img className="footer-payment" src="https://i.ibb.co/Qfvn4z6/payment.png" />
+            </div>
+        </div>
     )
 }
 

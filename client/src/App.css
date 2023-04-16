@@ -1,3 +1,29 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
+/* Product Page */
+.product-page-container {}
+
+.product-page-title {
+    margin: 20px;
+}
+
+.product-page-filter-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-page-filter {
+    margin: 20px;
+}
+
+.product-page-filter span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product-page-select {
+    padding: 10px;
+    margin-right: 20px;
+}

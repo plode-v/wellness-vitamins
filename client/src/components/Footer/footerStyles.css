@@ -1,0 +1,92 @@
+/* All */
+.footer-main-container {
+    display: flex;
+}
+
+.footer-title {
+    margin-bottom: 30px;
+}
+
+/* Left */
+.footer-left {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+
+}
+
+.footer-desc {
+    margin: 20px 0;
+}
+
+.footer-social-container {
+    display: flex;
+}
+
+.footer-social-container div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#fb {
+    background-color: #3b5999;
+}
+#ig {
+    background-color: #E4405F;
+}
+#tw {
+    background-color: #55ACEE;
+}
+
+
+
+/* Center */
+.footer-center {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-unlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-unlist li {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+/* Right */
+.footer-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-contactItem {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.footer-contactItem-icon {
+    margin-right: 10px;
+}
+
+.footer-payment {
+    width: 50%;
+}

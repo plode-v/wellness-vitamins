@@ -14,10 +14,8 @@ const Home = () => {
         <div>
             {/* <Announcement /> */}
             <NavBar />
-            <CatNav />
             <Slider />
             <Categories />
-            {/* <BestSeller /> */}
             <Products />
             <Newsletter />
             <Footer />

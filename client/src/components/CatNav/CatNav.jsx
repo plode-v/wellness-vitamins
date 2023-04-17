@@ -1,14 +1,18 @@
+import { Navbar, Nav } from "react-bootstrap"
+import catNavData from "./Element"
 import "./styles.css"
-import Navbar from "react-bootstrap/Navbar"
-import Element from "./Element"
 
 const CatNav = () => {
+
     return(
-        <Navbar className="catnav-parent-div">
-            <Element name="New Arrival" />
-            <Element name="Vitamins" />
-            <Element name="Apparels" />
-            <Element name="Clearance" />
+        <Navbar className="catnav-container">
+            {catNavData.map(item => (
+                <Nav.Link className="catnav-link">
+                    <span>
+                        {item}
+                    </span>
+                </Nav.Link>
+            ))}
         </Navbar>
     )
 }

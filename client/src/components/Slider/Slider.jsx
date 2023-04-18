@@ -1,6 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
-import "./styles.css"
 
 const Img = styled.div`
     height: 60vh;

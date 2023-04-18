@@ -1,0 +1,7 @@
+PUT http://localhost:5000/api/users/643e5686fc1a69501834033b
+Content-Type: application/json
+header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2U1Njg2ZmMxYTY5NTAxODM0MDMzYiIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODE4MTYxMDgsImV4cCI6MTY4MjA3NTMwOH0.ps_-1yIUYJGklT1dD2wFUXqKRocr95Wflp9MfUA3SX8
+
+{
+    "username": "newAdmin"
+}

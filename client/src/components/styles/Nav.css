@@ -1,0 +1,79 @@
+#Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+
+#basic-navbar-nav {
+    flex: 8;
+}
+
+.Navbar-Left {
+    flex: 1;
+    display: flex;
+}
+
+.Navbar-Logo {
+    font-weight: 800;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Navbar Center */
+.Navbar-Center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar-Search {
+    border: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    width: 80%;
+}
+
+.Navbar-Input {
+    border: none !important;
+    font-size: 1.2rem;
+}
+
+.Navbar-Input:focus {
+    outline: none;
+}
+
+.Navbar-Center button {
+    border: none;
+    background-color: transparent;
+}
+
+#search-icon {
+    color: gray;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Right */
+.Navbar-Right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Navbar-Language {
+    cursor: pointer;
+}
+
+.Navbar-MenuItem {
+    cursor: pointer;
+    color: rgb(81, 81, 81);
+}

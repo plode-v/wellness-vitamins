@@ -1,10 +1,261 @@
+/************** COMPONENTS START **************/
+/* Announcement component */
+#announcement {
+    height: 30px;
+    background-color: coral;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2px;
+}
+
+/* Navbar component */
+
+
+/* Slider component */
+.carousel-item {
+    height: 60vh;
+    width: 100vw;
+    background-color: grey;
+}
+
+.carousel-caption {
+    display: block;
+    height: min-content;
+    top: 200px;
+    text-align: left !important;
+}
+
+.carousel-caption h1{
+    font-size: 4.375rem !important;
+    padding: 10px 0;
+}
+
+.carousel-caption, p {
+    font-size: 20px !important;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.carousel-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 200ms;
+    color: white;
+}
+
+.carousel-button:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+
+/* Categories component */
+.categories-main-card {
+    padding: 60px 0;
+    border: none !important;
+}
+
+.categories-card {
+    gap: 5%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-item {
+    border-radius: 10px;
+    background-color: coral;
+    cursor: pointer;
+    margin: 80px 0;
+    padding: 2.5rem;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* CatNav component */
+.catnav-container {
+    background-color: teal;
+    height: 40px;
+    width: 100vw;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 30%;
+}
+
+.catnav-link {
+    cursor: pointer;
+    height: inherit;
+    padding: 0 100px;
+}
+
+.catnav-link span {
+    height: 100%;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding: 0 20px;
+    transition: 80ms;
+    align-items: center;
+}
+
+.catnav-link span:hover {
+    color: teal;
+    background-color: white;
+    transition: 80ms;
+}
+
+@media only screen and (max-width:380px) {
+    .catnav-container {
+        width: 100vw;
+    }
+}
+
+/* Newsletter component */
+.newsletter-container {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf5f5;
+}
+
+.newsletter-title {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.newsletter-desc {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.newsletter-input-container {
+    display: flex;
+    background-color: white;
+    width: 35%;
+    height: 2.5rem;
+}
+
+.newsletter-input {
+    border: none;
+    flex: 8;
+    padding-left: 15px;
+}
+
+.newsletter-button {
+    flex: 1;
+    border: none;
+    background-color: teal;
+    color: white;
+}
+
+/* Product component */
+.product-main-div {
+    flex: 1;
+    margin: 5px;
+    min-width: 280px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5fbfd;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+
+}
+
+.product-img {
+    height: 75%;
+    z-index: 2;
+}
+
+.product-info {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.product-info:hover {
+    opacity: 1;
+    transition: all 200ms;
+}
+
+.product-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.3rem;
+    transition: all 80ms;
+}
+
+.product-icon:hover {
+    background-color: #e9f5f5;
+    transform: scale(1.1);
+}
+
+
+.products-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+/* PAGES */
+
+body {
+    width: 100vw;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 /* ProductList Page */
-.productlist-page-container {}
-
 .productlist-page-title {
     margin: 20px;
 }
@@ -283,4 +534,12 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: 600;
     border: none;
+}
+
+/* Mobile */
+@media only screen and (max-width: 380px) {
+    .footer-main-container {
+        flex-wrap: wrap;
+    }
+
 }
